@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF -8">
+    <title>Menu Selection</title>
+    <style type="text/css">
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -9999;
+            border: 1px solid black;
+            background: grey;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        h3 {text-align: center;}
+        p {text-align: center;}
+        menu {text-align: center;}
+    </style>
+    
+    </head>
+    <title>Main Menu</title>
+    </head>
+  <canvas></canvas>
+    <body>
+<h1>Main Menu</h1>
+<h2>Please select a number</h>
+<h3>1-Load  2-Save  3-Play  4-Help  5-Quit</h2>
+ 
+
+<p>Click the button to access the select menu</p>
+
+<p><button onclick="myFunction()">Menu</button></p>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+  let text;
+  let background;
+  let Menu = prompt("Select a menu number");
+  switch(Menu) {
+    case "1":
+      text = "Loading Game";
+      break;
+    case "2":
+      text = "Saving";
+      break;
+    case "3":
+      text = "Let's Play";
+      break;
+     case "4":
+      text = "Here's your help";
+      break;
+      case "5":
+      text = "Game Over, program terminated";
+      break;
+    default:
+      text = "Invalid Entry, please try again";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+ 
+<script src="Quest 5.js">
+
+</body>
+</html>
